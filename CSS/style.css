@@ -76,3 +76,9 @@ input, textarea{
 button{
     width: 10%;
 }
+
+.legenda{
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
