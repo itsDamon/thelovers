@@ -83,9 +83,13 @@ button{
     margin-bottom: 3%;
 }
 .writing{
+    width: 50%;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     margin-top: 2%;
+    
 }
