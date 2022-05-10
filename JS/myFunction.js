@@ -1,6 +1,6 @@
 const actualTime = moment();
 
-function dayDifferenceF(d) {
+function daysDifferenceF(d) {
     let dayDifference = actualTime.diff(d, "days");
     return dayDifference;
 }
