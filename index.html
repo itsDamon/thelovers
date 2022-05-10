@@ -39,6 +39,9 @@
         <div class="prises divs">
             <h2>PRISES</h2>
         </div>
+        <div class="punish divs">
+            <h2 id="kittyNoTime"></h2>
+        </div>
     </section>
 <!-- NICK -->
     <section class="container daddy cont2">
@@ -51,8 +54,35 @@
         <div class="prises divs">
             <h2>PRISES</h2>
         </div>
+        <div class="punish divs">
+            <h2 id="daddyNoTime"></h2>
+        </div>
     </section>
     <div class="footer">
         <a>Ultima modifica:27/04/2022 19:49</a>    </div>
 </body>
+
+<script src="JS/moment.min.js"></script>
+<script src="JS/myFunction.js"></script>
+
+<script>
+    const daddyTime = moment("2022-05-04 23:56");
+    const kittyTime = moment("2022-05-04 23:56");
+
+    let daddyText = document.getElementById(daddyNoTime);
+    let kittyText = document.getElementById(kittyNoTime);
+
+    let daddyDaysDifference = daysDifferenceF(daddyTime);
+    let daddyHoursDifference = hoursDifferenceF(daddyTime);
+    let daddyMinutesDifference = minutesDifferenceF(daddyTime);
+    let daddySecondsDifference = secondsDifferenceF(daddyTime);
+
+    let kittyDaysDifference = daysDifferenceF(kittyTime);
+    let kittyHoursDifference = hoursDifferenceF(kittyTime);
+    let kittyMinutesDifference = minutesDifferenceF(kittyTime);
+    let kittySecondsDifference = secondsDifferenceF(kittyTime);
+    
+    daddyText.innerHTML = `${daddyDaysDifference}:${daddyHoursDifference}:${daddyMinutesDifference}:${daddySecondsDifference}`;
+    kittyText.innerHTML = `${kittyDaysDifference}:${kittyHoursDifference}:${kittyMinutesDifference}:${kittySecondsDifference}`;
+</script>
 </html>
